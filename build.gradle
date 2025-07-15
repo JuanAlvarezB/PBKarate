@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+ext {
+    karateVersion = "1.0.1"
+    cucumberReportVersion = "5.5.3"
+    junitVersion = "4.13.1"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation "com.intuit.karate:karate-junit5:${karateVersion}"
+    testImplementation "net.masterthought:cucumber-reporting:${cucumberReportVersion}"
+    testImplementation "junit:junit:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty"karate.options",System.properties.getProperty("karate.options")
+    systemProperty"baseUrl",System.properties.getProperty("baseUrl")
+    systemProperty"baseUrlDos",System.properties.getProperty("baseUrlDos")
+    outputs.upToDateWhen {false}
+}
+
+group = 'co.com.proyectobase.karate'
+version = '1.0-SNAPSHOT'
+
+
+
+

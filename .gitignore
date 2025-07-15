@@ -1,0 +1,57 @@
+# Archivos comunes de Java
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# Carpeta de salida de compilación
+/target/
+/build/
+
+# Archivos de IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Archivos de Eclipse
+.project
+.classpath
+.settings/
+
+# Archivos de NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Archivos de Gradle
+.gradle/
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Archivos de Maven
+/logs/
+*.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Karate: reportes y artefactos generados
+karate-reports/
+surefire-reports/
+cucumber-html-reports/
+target/karate-reports/
+target/surefire-reports/
+target/cucumber-html-reports/
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración personal
+*.env
+*.local
+*.log
