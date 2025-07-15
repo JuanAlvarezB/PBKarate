@@ -29,7 +29,7 @@ Feature: Validate Api reqres
     And match response.data.first_name == "#? _ == '<nombre>' || _ =='<nombreErrado>' "
     Examples:
       | nombrecaso | ID | email                  | nombre | nombreErrado |
-      | casoUno    | 2  | janet.weaver@reqres.in | Janet  | Juan         |
+      | casoUno    | 2  | janet.weaver@reqres.in | Janet  | Pedro        |
 
   @TipoPOST
   Scenario: Consumir API tipo POST
